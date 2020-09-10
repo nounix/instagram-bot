@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body { 
+                min-width: 210px; 
+                overflow-x: hidden; 
+                font-family: Arial, sans-serif; 
+                font-size: 12px; 
+            }
+            textarea { 
+                width: 210px; 
+            }
+            input#save { 
+                font-weight: bold; width: auto; 
+            }
+        </style>
+    </head>
+    <body>
+        <form id="instaBot">
+			<textarea id="list" name="list" rows="6" cols="2"></textarea></p>
+			<input type="checkbox" id="like">Like
+			<input type="checkbox" id="follow">Follow
+			<input type="checkbox" id="unfollow">Unfollow<br>
+			<button id="btnStart">Start</button>
+			<button id="btnStop">Stop</button>
+			<input id="delay" type="number" min="1" max="20" step="1" value="5" style="float: right">
+        </form>
+    </body>
+	<script src="popup.js"></script>
+</html>
